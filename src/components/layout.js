@@ -48,7 +48,7 @@ const Layout = (props) => {
               >
                 <Link to={`/work`}>Work</Link>
               </li>
-              <li
+              {/* <li
                 className={`nav-home  ${data.pathname.includes("/news") ? "nav-current" : ""} `}
                 role="menuitem"
               >
@@ -65,7 +65,7 @@ const Layout = (props) => {
                 role="menuitem"
               >
                 <Link to={`/elements`}>Elements</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div className="site-head-center">
@@ -75,14 +75,14 @@ const Layout = (props) => {
           </div>
           <div className="site-head-right">
             <div className="social-links">
-              <Link
+              {/* <Link
                 to={`https://facebook.com/${social.facebook}`}
                 title="Facebook"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Facebook
-              </Link>
+              </Link> */}
               <Link
                 to={`https://instagram.com/${social.twitter}`}
                 title="Instagram"
@@ -92,14 +92,14 @@ const Layout = (props) => {
                 Instagram
               </Link>
 
-              <Link
+              {/* <Link
                 to={`https://github.com/lilxyzz/gatsby-clay`}
                 title="Github"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Github
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -111,7 +111,8 @@ const Layout = (props) => {
       </main>
       <footer className="site-foot">
         &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link> &mdash;
-        Built by {""}
+        Bhavana Ellasiri
+        {/* Built by {""}
         <a
           href="https://travislord.xyz/"
           target="_blank"
@@ -126,7 +127,7 @@ const Layout = (props) => {
           rel="noopener noreferrer"
         >
           Abdul Waqar
-        </a>
+        </a> */}
       </footer>
     </div>
   );
